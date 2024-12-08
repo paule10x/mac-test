@@ -1,8 +1,0 @@
-name: Tmate Debug
-on: workflow_dispatch
-
-jobs:
-  debug:
-    runs-on: macos-latest
-    steps:
-      - uses: mxschmitt/action-tmate@v3
