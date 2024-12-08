@@ -1,0 +1,16 @@
+name: macOS Debug Session
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  debug:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        timeout-minutes: 360  # 6 hours
+        with:
+          limit-access-to-actor: true
