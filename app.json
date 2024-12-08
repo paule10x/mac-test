@@ -9,7 +9,11 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "Diese App benötigt Zugriff auf Gesundetsdaten, um deine Herzfrequenz zu überwachen.",
+        "NSHealthUpdateUsageDescription": "Diese App verwendet Geseundheitsdaten, um Echtzeitinformationen bereitzustellen."
+      }
     },
     "android": {
       "adaptiveIcon": {
